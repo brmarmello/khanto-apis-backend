@@ -23,7 +23,7 @@ from properties.api import viewsets as propertiesviewsets
 
 route = routers.DefaultRouter()
 
-route.register(r'properties/', propertiesviewsets.PropertiesViewSet, basename="Properties")
+route.register(r'properties', propertiesviewsets.PropertiesViewSet, basename="Properties")
 
 
 urlpatterns = [
